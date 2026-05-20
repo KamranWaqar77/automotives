@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 4em 2em;
+
+}
+
+li {
+    list-style: none;
+    padding: 0 1em;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.pointer:hover {
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.heading {
+    color: orangered;
+}
+
+.home {
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    background-color: orangered;
+}
+
+.home:hover {
+    background-color: rgb(255, 100, 0);
+}
+
+h2 {
+    margin-top: 5em;
+    margin-left: 2em;
+    
+}
+
+.heading-small {
+    color: orangered;
+}
+
+p {
+    margin-top: 1.5em;
+    margin-left: 3em;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 3em;
+    margin-left: 10em;
+    color: white;
+    background-color: orangered;
+    border: 2px solid orangered;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(255, 100, 0);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        margin-top: -1.5em;
+    }
+
+    .home {
+        border: none;
+        background-color: transparent;
+    }
+
+    h1 {
+        margin: 0 auto;
+    }
+
+    h2, p {
+        text-wrap: no-wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    button {
+        margin-top: 0;
+        margin-left: 0;
+        margin: 2.5em auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
